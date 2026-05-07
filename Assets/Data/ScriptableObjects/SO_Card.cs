@@ -12,5 +12,4 @@ public class SO_Card : ScriptableObject
     [field: SerializeField, MinValue(0), BoxGroup("Stats")] public float Damage { get; private set; }
     [field: SerializeField, MinValue(0), BoxGroup("Stats")] public int Cost { get; private set; }
     [field: SerializeField,BoxGroup("Stats")] public E_DamageType DamageType { get; private set; }
-    
 }
