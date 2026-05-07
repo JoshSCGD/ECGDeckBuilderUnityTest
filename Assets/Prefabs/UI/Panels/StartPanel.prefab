@@ -101,8 +101,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4133537173809908817, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8297591889275400557}
   m_SourcePrefab: {fileID: 100100000, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+--- !u!1 &3024617207679049021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4133537173809908817, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+  m_PrefabInstance: {fileID: 1199329124388278636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8297591889275400557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3024617207679049021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54b1219b61a8fa4582802cf289d366d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonActionLoadScene
+  _sceneName: GameScene
 --- !u!224 &6187346575909005549 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5006034205574478209, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
