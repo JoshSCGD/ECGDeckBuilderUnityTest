@@ -5,10 +5,10 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [SerializeField] private bool _debugData = false; 
-    [SerializeField, ShowIf("_debugData")]  private SO_Card _cardData; // despite the deck initializing the cards, I kept a field here for easy debugging in the scene 
+    [SerializeField, ShowIf("_debugData")]  private PSO_Card _cardData; // despite the deck initializing the cards, I kept a field here for easy debugging in the scene 
     [SerializeField, Required] private SpriteRenderer _illustration; // the following vars are required, or else stuff breaks
     
-    public SO_Card CardData => _cardData; // a convenient getter if needed 
+    public PSO_Card CardData => _cardData; // a convenient getter if needed 
 
     private void OnValidate()  // updates illustration in the scene 
     {
@@ -23,11 +23,9 @@ public class Card : MonoBehaviour
         _illustration.sprite = _cardData.Illustration;
     }
 
-    public void Initialize(SO_Card cardData) // this is a func that the deck will call to initialize the card data
+    public void Initialize(PSO_Card cardData) // this is a func that the deck will call to initialize the card data
     {
-        if (cardData == null || _illustration == null)
-            return;
-
+        if(cardData == null) return;
         _cardData = cardData;
         _illustration.sprite = _cardData.Illustration;
     }
