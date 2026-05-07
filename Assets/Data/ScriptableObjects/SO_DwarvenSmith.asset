@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4338cfbe8a165254aa07b1d8166d3844, type: 3}
   m_Name: SO_DwarvenSmith
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
-  <Name>k__BackingField: Card Name
+  <Name>k__BackingField: 'Dwarven Smith  '
   <Illustration>k__BackingField: {fileID: 21300000, guid: 2358f4f770e56c943846377f7dddc54d, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
-  <DamageType>k__BackingField: 0
+  <Description>k__BackingField: 'Give a random friendly minion +2 Health.  '
+  <Cost>k__BackingField: 3
+  <Health>k__BackingField: 2
+  <Damage>k__BackingField: 4
+  <DamageType>k__BackingField: 1

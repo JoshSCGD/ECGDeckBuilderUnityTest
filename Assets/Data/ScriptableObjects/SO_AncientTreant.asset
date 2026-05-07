@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
   <Illustration>k__BackingField: {fileID: 21300000, guid: bd555f8e00bc07f4ba1e862461d41328, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
+  <Description>k__BackingField: Taunt
+  <Cost>k__BackingField: 8
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 8
+  <Health>k__BackingField: 8
   <DamageType>k__BackingField: 0

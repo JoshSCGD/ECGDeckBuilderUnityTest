@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
   <Illustration>k__BackingField: {fileID: 21300000, guid: fb3601e9f06a5d24092aa57b8cda9944, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
-  <DamageType>k__BackingField: 0
+  <Description>k__BackingField: 'Stealth. Can''t be attacked until it attacks.  '
+  <Cost>k__BackingField: 4
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 4
+  <Health>k__BackingField: 2
+  <DamageType>k__BackingField: 7

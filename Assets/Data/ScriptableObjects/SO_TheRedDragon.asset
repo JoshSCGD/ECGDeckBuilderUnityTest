@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4338cfbe8a165254aa07b1d8166d3844, type: 3}
   m_Name: SO_TheRedDragon
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
-  <Name>k__BackingField: Card Name
+  <Name>k__BackingField: 'The Red Dragon  '
   <Illustration>k__BackingField: {fileID: 21300000, guid: 4465149e5f77ff940b5a62d59f9822a1, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
-  <DamageType>k__BackingField: 0
+  <Description>k__BackingField: 'Battlecry: Destroy all other minions.  '
+  <Cost>k__BackingField: 10
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 12
+  <Health>k__BackingField: 12
+  <DamageType>k__BackingField: 1

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
   <Illustration>k__BackingField: {fileID: 21300000, guid: 8b287c27aca84e643b55309f8c4e77ac, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
-  <DamageType>k__BackingField: 0
+  <Description>k__BackingField: 'Can''t be targeted by Spells or Hero Powers.  '
+  <Cost>k__BackingField: 5
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 4
+  <Health>k__BackingField: 6
+  <DamageType>k__BackingField: 3

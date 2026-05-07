@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
   <Illustration>k__BackingField: {fileID: 21300000, guid: 1e247021cc969fa47945074ec7afea30, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
+  <Description>k__BackingField: 'Rush. Can attack minions immediately.  '
+  <Cost>k__BackingField: 4
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 5
+  <Health>k__BackingField: 2
   <DamageType>k__BackingField: 0

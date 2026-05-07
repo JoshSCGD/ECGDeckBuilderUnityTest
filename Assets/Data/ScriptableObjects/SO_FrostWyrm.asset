@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
   <Illustration>k__BackingField: {fileID: 21300000, guid: 52db83ab46b3a28478aa30c0dd49ef94, type: 3}
-  <Description>k__BackingField: Card Description
-  <Health>k__BackingField: 0
-  <Damage>k__BackingField: 0
-  <Cost>k__BackingField: 0
-  <DamageType>k__BackingField: 0
+  <Description>k__BackingField: 'Freeze any character damaged by this minion.  '
+  <Cost>k__BackingField: 7
+  <CardType>k__BackingField: 0
+  <Damage>k__BackingField: 6
+  <Health>k__BackingField: 6
+  <DamageType>k__BackingField: 6
