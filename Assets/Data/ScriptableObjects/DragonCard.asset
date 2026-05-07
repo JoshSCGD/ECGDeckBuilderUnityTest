@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DragonCard
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
   <Name>k__BackingField: Card Name
-  <Illustration>k__BackingField: {fileID: 0}
+  <Illustration>k__BackingField: {fileID: 21300000, guid: 4465149e5f77ff940b5a62d59f9822a1, type: 3}
   <Description>k__BackingField: Card Description
   <Health>k__BackingField: 0
   <Damage>k__BackingField: 0
