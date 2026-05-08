@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -23,4 +24,5 @@ public class HandController : MonoBehaviour
         Vector3 pos = _handOrigin.position + new Vector3(index * _spacing, 0, 0);
         card.transform.position = pos;
     }
+    
 }

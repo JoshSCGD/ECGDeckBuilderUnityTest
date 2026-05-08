@@ -24,9 +24,9 @@ public class DeckController : MonoBehaviour
     public void DrawCard()
     {
         if (_currentIndex >= _cardData.Count) return;
-
+        
         if (_handController.IsFull) return;
-
+        
         PSO_Card data = _cardData[_currentIndex];
         _currentIndex++;
 
