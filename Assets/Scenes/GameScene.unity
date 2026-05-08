@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 789489559}
   - component: {fileID: 789489558}
   - component: {fileID: 789489562}
+  - component: {fileID: 789489563}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -499,6 +500,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.PhysicsRaycaster
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 1
+--- !u!114 &789489563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789489557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
   m_EventMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -860,6 +877,26 @@ PrefabInstance:
     - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
       propertyPath: m_text
       value: Draw Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165529398688815771, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 9063797294498074501, guid: 1880611d33a4a284b8f4cedad766f4e1, type: 3}
       propertyPath: m_Colors.m_NormalColor.a

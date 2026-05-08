@@ -2,8 +2,11 @@ using System;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class Card : MonoBehaviour
+
 {
     [SerializeField] private bool _debugData = false; 
     [SerializeField, ShowIf("_debugData")]  private PSO_Card _cardData; // a field here for easy debugging
@@ -14,7 +17,7 @@ public class Card : MonoBehaviour
 
     private void OnValidate()  // updates illustration in the scene 
     {
-        if (!_debugData) return; //some errors were getting thrown in editor and while that should be fine, I validated them to be safe
+        if (!_debugData) return;
 
         if (_cardData == null)
             return;
@@ -22,7 +25,7 @@ public class Card : MonoBehaviour
         Initialize(_cardData);
     }
 
-    private void OnMouseDown()
+    private void OnMouseEnter()
     {
         print("hello");
     }
@@ -35,8 +38,6 @@ public class Card : MonoBehaviour
         _cardData = cardData;
         _illustration.sprite = _cardData.Illustration;
         _cardName.text = _cardData.Name;
-
     }
-    
     
 }
