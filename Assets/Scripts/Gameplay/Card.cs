@@ -15,7 +15,12 @@ public class Card : MonoBehaviour
     
     public PSO_Card CardData => _cardData; // a convenient getter if needed 
 
-    private void OnValidate()  // updates illustration in the scene 
+    private void Start()
+    {
+        
+    }
+
+    private void OnValidate()  // updates data in editor
     {
         if (!_debugData) return;
 
@@ -24,12 +29,7 @@ public class Card : MonoBehaviour
         
         Initialize(_cardData);
     }
-
-    private void OnMouseEnter()
-    {
-        print("hello");
-    }
-
+    
 
     public void Initialize(PSO_Card cardData) // this is a func that the deck will call to initialize the card data
     {

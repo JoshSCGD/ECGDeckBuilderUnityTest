@@ -7,11 +7,11 @@ public class HandController : MonoBehaviour
 {
     [SerializeField] private Transform _handOrigin;
     [SerializeField,MinValue(0)] private float _spacing = 1.5f;
-    [SerializeField, MinValue(0)] private int _maxCards = 8;
+    [MinValue(0)] public int _maxCards { get; private set; } = 8;
 
     private List<Card> _cards = new List<Card>();
 
-    public bool IsFull => _cards.Count >= _maxCards; 
+    public bool IsFull => _cards.Count >= _maxCards;
 
     public void AddCard(Card card)
     {

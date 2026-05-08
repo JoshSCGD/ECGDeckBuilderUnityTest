@@ -13,7 +13,7 @@ public class DeckController : MonoBehaviour
     private int _currentIndex;
     
     //dispatchers
-    public UnityEvent OnDrawCard;
+    public UnityEvent <int> OnDrawCard;
     public UnityEvent OnShuffleCard;
     
     private void Start()
@@ -37,7 +37,7 @@ public class DeckController : MonoBehaviour
 
         _handController.AddCard(card);
 
-        OnDrawCard?.Invoke();
+        OnDrawCard?.Invoke(_currentIndex);
     }
 
     public void Shuffle()
