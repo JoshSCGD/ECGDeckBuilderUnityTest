@@ -6,7 +6,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [SerializeField] private bool _debugData = false; 
-    [SerializeField, ShowIf("_debugData")]  private PSO_Card _cardData; // despite the deck initializing the cards, I kept a field here for easy debugging in the scene 
+    [SerializeField, ShowIf("_debugData")]  private PSO_Card _cardData; // a field here for easy debugging
     [SerializeField, Required] private SpriteRenderer _illustration; // the following vars are required, or else stuff breaks
     [SerializeField, Required] private TextMeshPro _cardName;
     
@@ -22,9 +22,16 @@ public class Card : MonoBehaviour
         Initialize(_cardData);
     }
 
+    private void OnMouseDown()
+    {
+        print("hello");
+    }
+
+
     public void Initialize(PSO_Card cardData) // this is a func that the deck will call to initialize the card data
     {
         if(cardData == null) return;
+        
         _cardData = cardData;
         _illustration.sprite = _cardData.Illustration;
         _cardName.text = _cardData.Name;
