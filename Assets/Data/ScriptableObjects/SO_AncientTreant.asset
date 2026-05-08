@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4338cfbe8a165254aa07b1d8166d3844, type: 3}
   m_Name: SO_AncientTreant
   m_EditorClassIdentifier: Assembly-CSharp::SO_Card
-  <Name>k__BackingField: Card Name
+  <Name>k__BackingField: Ancient Treant
   <Illustration>k__BackingField: {fileID: 21300000, guid: bd555f8e00bc07f4ba1e862461d41328, type: 3}
   <Description>k__BackingField: Taunt
   <Cost>k__BackingField: 8

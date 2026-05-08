@@ -1,5 +1,6 @@
 using System;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 
 public class Card : MonoBehaviour
@@ -7,6 +8,7 @@ public class Card : MonoBehaviour
     [SerializeField] private bool _debugData = false; 
     [SerializeField, ShowIf("_debugData")]  private PSO_Card _cardData; // despite the deck initializing the cards, I kept a field here for easy debugging in the scene 
     [SerializeField, Required] private SpriteRenderer _illustration; // the following vars are required, or else stuff breaks
+    [SerializeField, Required] private TextMeshPro _cardName;
     
     public PSO_Card CardData => _cardData; // a convenient getter if needed 
 
@@ -16,11 +18,8 @@ public class Card : MonoBehaviour
 
         if (_cardData == null)
             return;
-
-        if (_cardData.Illustration == null)
-            return;
-
-        _illustration.sprite = _cardData.Illustration;
+        
+        Initialize(_cardData);
     }
 
     public void Initialize(PSO_Card cardData) // this is a func that the deck will call to initialize the card data
@@ -28,5 +27,9 @@ public class Card : MonoBehaviour
         if(cardData == null) return;
         _cardData = cardData;
         _illustration.sprite = _cardData.Illustration;
+        _cardName.text = _cardData.Name;
+
     }
+    
+    
 }
